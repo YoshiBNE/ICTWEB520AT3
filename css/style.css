@@ -17,6 +17,7 @@ h1 {
     font-size: 3em;
 }
 
+
 nav {
     background-color: black;
     display: flex;
@@ -46,6 +47,12 @@ main {
     padding: 0;
     margin: 2em;
     background-color: white;
+}
+
+p{
+    color: black;
+    padding: 0.5em;
+    line-height: 1.5em;
 }
 
 /* ###### Home ###### */
@@ -146,6 +153,17 @@ main #bottom {
     background-size: 80%;
 }
 
+.heading {
+    background-position: center;
+    background-size: 80%;
+}
+
+.heading h2 {
+    font-weight: 900;
+    font-style: italic;
+    padding: 1em;
+}
+
 /* ###### About ###### */
 
 #inner-link {
@@ -181,36 +199,119 @@ main #bottom {
 #inner-link div:hover a {
     color: white;
 }
+/* ############################# */
+#about-content {
+    background-color: #E02020;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+#about-content h3 {
+    font-size: 1.5em;
+    padding-left: 1em;
+}
+
+#about-content div > p {
+    color: black;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+    padding: 2em;
+}
 
 .who {
     background-image: url(/images/man_in_gym.jpg);
+    background-position: center;
     background-size: 100%;
 }
 
 .about-staffs {
     background-image: url(/images/trainer.jpg);
-    background-size: 70%;
+    background-position: center;
+    background-size: 80%;
 }
 
 .owner {
     background-image: url(/images/boxing_man.jpg);
-    background-size: 100%;
+    background-position: center;
+    background-size: 90%;
 }
 
+#backTop {
+    text-align: center;
+    background-color: #E02020;
+    color: white;
+}
 
 /* ######  ###### */
 
 /* ###### Services ###### */
+h4 {
+    color: black;
+    font-weight: 800;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+}
+
+#services-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    background-image: url('/images/woman_running.jpg');
+    background-position: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+}
+
+#services-content div {
+    width: 50%;
+}
+
+#class-list li {
+    color: black;
+    line-height: 1.5em;
+    float: none;
+}
 
 
 
 /* ######  ###### */
 
 /* ###### Staffs ###### */
-
+#staffs-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    background-image: url('/images/yoga.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+}
 
 
 /* ######  ###### */
 
 /* ###### Enquiry ###### */
+#content-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    color: white;
+    padding-left: 2em;
+    background-color: #E02020;
+}
 
+form {
+    width: 60%;
+    min-width: 500px;
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+figure {
+    min-width: 580px;
+}

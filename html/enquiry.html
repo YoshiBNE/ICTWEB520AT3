@@ -13,7 +13,7 @@
     </header>
     <nav>
         <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="/html/services.html">Services</a></li>
             <li><a href="/html/staffs.html">Staffs</a></li>
             <li><a href="/html/about.html">About Us</a></li>
@@ -21,7 +21,93 @@
         </ul>
     </nav>
     <main>
-        
+        <section class="heading" style="background-image: url('/images/super_man.jpg');">
+            <h2>Enquiry</h2>
+        </section>
+        <section id="content-form">
+            <form> 
+                <!-- First Name -->
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name here" size="40" required><br><br>
+                <!-- Last Name -->
+                <label for="lname">Last Name:</label>
+                <input type="text" for="lname" name="lname" placeholder="Enter your last name here" size="40" required><br><br>
+                <!-- Email -->
+                <label for="emailAddress" style="padding-right: 39px;">E-mail:</label>
+                <input id="emailAddress" type="email" size="40" placeholder="your_address@example.com" required><br><br>
+                <!-- Mobile Number (tel pattern)-->
+                <label for="phone"style="padding-right: 36px;">Mobile:</label>
+                <input type="tel" id="phone" name="phone" size="10" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"><br><br>
+                <!-- Age Selection (select options)-->
+                <label for="age" style="padding-right: 59px;">Age:</label>
+                <select id="age" name="age" required>
+                    <option value="" disabled selected>Select your age</option>
+                    <option value="under18">under 18</option>
+                    <option value="18-29">18 - 29</option>
+                    <option value="30-39">30 - 39</option>
+                    <option value="40-49">40 - 49</option>
+                    <option value="50-59">50 - 59</option>
+                    <option value="60-69">60 - 69</option>
+                    <option value="70orAbove">70 or above</option>
+                </select><br><br>
+                <!-- Choose Gender (radio button) -->
+                <label style="padding-right: 25px;">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required></input>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female"></input>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other"></input>
+                <label for="other">Do not want to tell</label><br><br>
+                <!-- Choose Interest (checkbox) -->
+                <label style="padding-right: 15px;">Interests:</label>
+                <input type="checkbox" id="dietary" name="dietary" value="dietary" required>
+                <label for="dietary">Dietary</label>
+                <input type="checkbox" id="bulkup" name="bulkup" value="bulkup">
+                <label for="bulkup">Bulk Up</label>
+                <input type="checkbox" id="keepShape" name="keepShape" value="keepShape">
+                <label for="keepShape">Keep in Shape</label><br><br>
+
+                <!-- Class Option (select option)-->
+                <label for="classChoice" style="padding-right: 59px;">Class:</label>
+                <select id="classChoice" name="classChoice" required>
+                    <option value="" disabled selected>Choose a class interested</option>
+                    <option value="absBlast">Abs Blast</option>
+                    <option value="abt">ABT</option>
+                    <option value="aquaFitMode">Aqua Fit & Aqua Mode</option>
+                    <option value="bodyAttack">Body Attack</option>
+                    <option value="bodyBalance">Body Balance</option>
+                    <option value="bodyCombat">Body Combat</option>
+                    <option value="bodyJam">Body Jam</option>
+                    <option value="bodyPump">Body Pump</option>
+                    <option value="bodyStep">Body Step</option>
+                    <option value="bodyVive">Body Vive</option>
+                    <option value="boxingTaebox">Boxing & TAE Box</option>
+                    <option value="cardioBlitzCircuit">Cardio Blitz & Cardio Circuit</option>
+                    <option value="chiBall">Chi Ball</option>
+                    <option value="cycleExtreme">Cycle Extreme</option>
+                    <option value="cycle">Cycle</option>
+                    <option value="hiloFatBurner">Hilo & Fat Burner</option>
+                    <option value="pilates">Pilates</option>
+                    <option value="powerHour">Power Hour</option>
+                    <option value="rejuvenate">Rejuvenate, Low Impact & Gentle Fitness</option>
+                    <option value="rpm">RPM</option>
+                    <option value="sculptCombo">Sculpt & Combo</option>
+                    <option value="stepMBB">Step Moves, Step Basic & Step Burner</option>
+                    <option value="taiChi">Tai Chi</option>
+                    <option value="dance">World Dance & Dance</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="zumba">Zumba</option>
+                </select><br><br>
+                <!-- Text Message -->
+                <label for="message" style="vertical-align: top; padding-right: 13px;">Message:</label>
+                <textarea id="message" name="message" rows="15" cols="45" maxlength="300" placeholder="Please type your message here"></textarea><br><br>
+                <!-- Submit Button -->
+                <input type="submit" style="margin-left: 200px;"></input>
+            </form>
+            <figure>
+                <img src="/images/woman_running_cropped.jpg" alt="women_running" style="width: 100%;">
+            </figure>
+        </section>
     </main>
     <footer>&copy;TAFE QUEENSLAND 2023 ICTWEB519-520 Yoshiyasu Ogyu 474276398</footer>
 </body>
