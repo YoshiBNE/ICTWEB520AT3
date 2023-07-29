@@ -73,20 +73,20 @@ main h2 {
 
 main #top {
     color: black;
-    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/man_woman_push_up.jpg);
+    background-image: url(https://yoshibne.github.io/ICTWEB520AT3/images/man_woman_push_up.jpg);
     background-size: 80%;
 }
 
 main #middle {
     color: black;
-    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/super_man.jpg);
+    background-image: url(https://yoshibne.github.io/ICTWEB520AT3/images/super_man.jpg);
     background-size: 80%;
     text-align: right;
 }
 
 main #bottom {
     color: black;
-    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/welcome.jpg);
+    background-image: url(https://yoshibne.github.io/ICTWEB520AT3/images/welcome.jpg);
     text-align: center;
     font-weight: 900;
 }
@@ -138,22 +138,22 @@ main #bottom {
 }
 
 #services {
-    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/gym.jpg);
+    background-image: url(https://yoshibne.github.io/ICTWEB520AT3/images/gym.jpg);
     background-size: 100%;
 }
 
 #about {
-    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/trainer.jpg);
+    background-image: url(https://yoshibne.github.io/ICTWEB520AT3/images/trainer.jpg);
     background-size: 95%;
 }
 
 #staffs {
-    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/fitness_diet.jpg);
+    background-image: url(https://yoshibne.github.io/ICTWEB520AT3/images/fitness_diet.jpg);
     background-size: 100%;
 }
 
 #enquiry {
-    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/women_exercise.jpg);
+    background-image: url(https://yoshibne.github.io/ICTWEB520AT3/images/women_exercise.jpg);
     background-size: 80%;
 }
 
@@ -238,19 +238,19 @@ main #bottom {
 }
 
 .who {
-    background-image: url(/images/man_in_gym.jpg);
+    background-image: url(https://yoshibne.github.io/ICTWEB520AT3/images/man_in_gym.jpg);
     background-position: center;
     background-size: 100%;
 }
 
 .about-staffs {
-    background-image: url(/images/trainer.jpg);
+    background-image: url(https://yoshibne.github.io/ICTWEB520AT3/images/trainer.jpg);
     background-position: center;
     background-size: 80%;
 }
 
 .owner {
-    background-image: url(/images/boxing_man.jpg);
+    background-image: url(https://yoshibne.github.io/ICTWEB520AT3/images/boxing_man.jpg);
     background-position: center;
     background-size: 90%;
 }
@@ -273,14 +273,14 @@ h4 {
 }
 
 h4::before {
-    content: url(/images/icon_exercise.png)
+    content: url(https://yoshibne.github.io/ICTWEB520AT3/images/icon_exercise.png)
 }
 
 #services-content {
     display: flex;
     flex-wrap: wrap;
     flex-flow: row;
-    background-image: url('/images/woman_running.jpg');
+    background-image: url('https://yoshibne.github.io/ICTWEB520AT3/images/woman_running.jpg');
     background-position: center;
     background-color: rgb(255, 255, 255, 0.5);
     background-blend-mode: lighten;
@@ -305,7 +305,7 @@ h4::before {
     display: flex;
     flex-wrap: wrap;
     flex-flow: row;
-    background-image: url('/images/yoga.jpg');
+    background-image: url('https://yoshibne.github.io/ICTWEB520AT3/images/yoga.jpg');
     background-size: 100%;
     background-position: center;
     background-color: rgb(255, 255, 255, 0.5);
