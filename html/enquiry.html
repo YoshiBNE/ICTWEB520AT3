@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiry - ML Strength</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/script.js"></script>
 </head>
 <body>
-    <header>
-        <div id="logo"></div>
-        <h1>ML Strength - Health and Fitness</h1>
+    <header id="top" class="header-content">
+        <div id="logo">
+            <img src="/images/sample_logo.png" alt="logo">
+        </div>
+        <h1>
+            ML Strength - Health and Fitness     
+        </h1>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
     <nav>
         <ul class="navbar">
@@ -31,13 +41,13 @@
                 <input type="text" id="fname" name="fname" placeholder="Enter your first name here" size="40" required><br><br>
                 <!-- Last Name -->
                 <label for="lname">Last Name:</label>
-                <input type="text" for="lname" name="lname" placeholder="Enter your last name here" size="40" required><br><br>
+                <input type="text" id="lname" for="lname" name="lname" placeholder="Enter your last name here" size="40" required><br><br>
                 <!-- Email -->
                 <label for="emailAddress" style="padding-right: 39px;">E-mail:</label>
                 <input id="emailAddress" type="email" size="40" placeholder="your_address@example.com" required><br><br>
                 <!-- Mobile Number (tel pattern)-->
                 <label for="phone"style="padding-right: 36px;">Mobile:</label>
-                <input type="tel" id="phone" name="phone" size="10" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"><br><br>
+                <input type="tel" id="phone" name="phone" size="20" placeholder="Enter Mobile Number Here" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"><br><br>
                 <!-- Age Selection (select options)-->
                 <label for="age" style="padding-right: 59px;">Age:</label>
                 <select id="age" name="age" required>
@@ -52,20 +62,20 @@
                 </select><br><br>
                 <!-- Choose Gender (radio button) -->
                 <label style="padding-right: 25px;">Gender:</label>
-                <input type="radio" id="male" name="gender" value="male" required></input>
+                <input type="radio" id="male" class="gender" name="gender" value="male" required></input>
                 <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female"></input>
+                <input type="radio" id="female" class="gender" name="gender" value="female"></input>
                 <label for="female">Female</label>
-                <input type="radio" id="other" name="gender" value="other"></input>
-                <label for="other">Do not want to tell</label><br><br>
+                <input type="radio" id="other" class="gender" name="gender" value="other"></input>
+                <label for="other">Do not want to tell</label><br class="avoid"><br class="avoid">
                 <!-- Choose Interest (checkbox) -->
                 <label style="padding-right: 15px;">Interests:</label>
-                <input type="checkbox" id="dietary" name="dietary" value="dietary" required>
+                <input type="checkbox" id="dietary" class="interest" name="dietary" value="dietary" required>
                 <label for="dietary">Dietary</label>
-                <input type="checkbox" id="bulkup" name="bulkup" value="bulkup">
+                <input type="checkbox" id="bulkup" class="interest" name="bulkup" value="bulkup">
                 <label for="bulkup">Bulk Up</label>
-                <input type="checkbox" id="keepShape" name="keepShape" value="keepShape">
-                <label for="keepShape">Keep in Shape</label><br><br>
+                <input type="checkbox" id="keepShape" class="interest" name="keepShape" value="keepShape">
+                <label for="keepShape">Keep in Shape</label><br class="avoid"><br class="avoid">
 
                 <!-- Class Option (select option)-->
                 <label for="classChoice" style="padding-right: 59px;">Class:</label>
@@ -97,12 +107,21 @@
                     <option value="dance">World Dance & Dance</option>
                     <option value="yoga">Yoga</option>
                     <option value="zumba">Zumba</option>
-                </select><br><br>
+                </select><br class="avoid"><br class="avoid">
                 <!-- Text Message -->
                 <label for="message" style="vertical-align: top; padding-right: 13px;">Message:</label>
                 <textarea id="message" name="message" rows="15" cols="45" maxlength="300" placeholder="Please type your message here"></textarea><br><br>
                 <!-- Submit Button -->
-                <input type="submit" style="margin-left: 200px;"></input>
+                <input id="submit" type="submit" style="margin-left: 200px;"></input><br class="avoid"><br class="avoid">
+                <!-- Help -->
+                <div class="helpVideo">
+                    <a>help</a>
+                </div>
+                <div class="popup" onmouseover="myFunction()">Click me!
+                    <video class="popuptext" id="myPopup" autoplay loop muted>
+                        <source src="/video/enquiry_help.mp4" type="video/mp4">
+                    </video>
+                </div>
             </form>
             <figure>
                 <img src="/images/woman_running_cropped.jpg" alt="women_running" style="width: 100%;">
